@@ -5,7 +5,7 @@ int main()
 {
 	system("chcp 1251");
 	double x1, y1, x2, y2, x3, y3, x4, y4, x5, y5, S;
-	cout << "\nВведите координаты вершин многоугольника:\n";
+	cout << "\Input coord for 5 points(x,y):\n";
 	cin >> x1;
 	cin >> y1;
 	cin >> x2;
@@ -17,6 +17,6 @@ int main()
 	cin >> x5;
 	cin >> y5;
 	S = (x1 * y2 + x2 * y3 + x3 * y4 + x4 * y5 + x5 * y1 - y1 * x2 - y2 * x3 - y3 * x4 - y4 * x5 - y5 * x1) / 2;
-	cout << "Площадь многоугольника: " << S << endl;
+	cout << "Area is: " << S << endl;
 	return 0;
 }
